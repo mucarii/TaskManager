@@ -55,9 +55,3 @@ O projeto é dividido em vários arquivos principais:
 
 3. Abra o arquivo index.html em um navegador para começar a usar a aplicação.
 
-Contribuindo
-Se você quiser contribuir com o projeto, sinta-se à vontade para enviar pull requests ou abrir issues. Para mais detalhes, consulte o Guia de Contribuição.
-
-Licença
-Este projeto está licenciado sob a Licença MIT.
-
