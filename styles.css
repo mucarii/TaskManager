@@ -1,0 +1,182 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Cabeçalho e Rodapé */
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 120px; /* Margem adicionada para acomodar o cabeçalho fixo */
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#task-form input {
+    flex: 1;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#task-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#task-form button:hover {
+    background-color: #555;
+}
+
+/* Lista de Tarefas */
+#tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tasks li {
+    background-color: #f9f9f9;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#tasks li input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+#tasks li button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 0.3em 0.5em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: 0.5em;
+}
+
+#tasks li button:hover {
+    background-color: #ff1a1a;
+}
+
+/* Formulário de Edição de Tarefa */
+#edit-task-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#edit-task-form input {
+    flex: 1;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#edit-task-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#edit-task-form button:hover {
+    background-color: #555;
+}
+
+/* Design Responsivo */
+@media (max-width: 600px) {
+    main {
+        padding: 0.5em;
+        margin-top: 120px; /* Garante que a margem seja consistente em telas menores */
+    }
+
+    #task-form {
+        flex-direction: column;
+    }
+
+    #task-form input {
+        margin-bottom: 0.5em;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
